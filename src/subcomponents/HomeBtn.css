@@ -1,0 +1,78 @@
+.homebtn {
+  background-color: transparent;
+
+  animation: bg-move 3s infinite;
+  will-change: background-position;
+  transition: 0.1s ease-in-out;
+  border-Radius:25%;
+ 
+  
+}
+.homebtn:hover {
+    border-Radius:100%;
+    background-color: #ffc8dd;
+    animation: radius-change 7.6s infinite ;
+  
+}
+
+.coffeIcon {
+  position: fixed;
+  top: 1rem;
+  left: 4rem;
+  transform: translate(-50%, 0);
+  padding: 0.1rem;
+  border-radius: 25%;
+  border: 3px solid #ffc8dd;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+  background-image: linear-gradient(
+    hsl(129, 53%, 90%),
+    hsl(141, 45%, 81%),
+    hsl(147, 43%, 71%)
+  );
+  box-shadow: 0 4px 15px 0 rgba(255, 200, 221, 1);
+  background-size: 100% 200%;
+  animation: bg-move 3s infinite;
+  will-change: background-position;
+  transition: 0.3s ease-in-out;
+ 
+
+}
+.coffeIcon:hover {
+  top: 0rem;
+  left: 2.5rem;
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  background-image: hsl(337, 100%, 89%);
+  transition: 0.3s ease-in-out;
+  border: none;
+  border-Radius:50%;
+  animation: radius-change 8s infinite ;
+  
+}
+
+@keyframes bg-move {
+  0%,
+  100% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+}
+
+@keyframes radius-change {
+    0%,
+    100% {
+      border-radius: 25%;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    50% {
+        border-radius: 50%;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
+    }
+  }
